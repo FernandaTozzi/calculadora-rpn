@@ -34,6 +34,11 @@ public class CalculadoraRPN {
                         break;
 
                     case "/":
+
+                        if (numero2 == 0) {
+                            throw new ArithmeticException("Divisão por zero!");
+                        }
+
                         resultado = numero1 / numero2;
                         break;
                 }
