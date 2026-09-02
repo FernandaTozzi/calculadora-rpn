@@ -11,7 +11,13 @@ public class Main {
 
         String expressao = scanner.nextLine();
 
-        System.out.println("Expressão digitada: " + expressao);
+        String rpn = ConversorRPN.converter(expressao);
+
+        System.out.println("\nExpressão original:");
+        System.out.println(expressao);
+
+        System.out.println("\nExpressão em RPN:");
+        System.out.println(rpn);
 
         scanner.close();
     }
